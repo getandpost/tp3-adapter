@@ -1,0 +1,29 @@
+{
+    "name": "casbin/tp3-adapter",
+    "keywords": ["casbin", "thinkphp", "casbin-adapter", "permission", "rbac", "acl"],
+    "description": "Use casbin in thinkphp3.2.3",
+    "authors": [
+        {
+            "name": "laijiawen",
+            "email": "laijiawen@zhimadi.cn"
+        }
+    ],
+    "license": "Apache-2.0",
+    "require": {
+    	"casbin/casbin": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7|~6.0|~7.0",
+        "php-coveralls/php-coveralls": "^2.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "CasbinAdapter\\Think\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CasbinAdapter\\Think\\Tests\\": "tests/"
+        }
+    }
+}
